@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    border: none;
+}
+
+:root {
+    --cor-principal: #9BF00B;
+
+    /* Dark scale */
+    --dark-100: #0C0C0C;
+    --dark-70 : #777777;
+    --dark-40 : #C0C0C0;
+    --dark-10 : #FFFFFF;
+    --gray: #9f9797;
+
+    /* Fonts */
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: black;
+    width: auto;
+    height: 100vh;
+}
+
+span {
+    color: var(--cor-principal);
+}
+
+/* header zone */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 0 0 0;
+}
+
+.logo {
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.nav-bar a {
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    width: 224px;
+    height: 60px;
+    background-color: var(--cor-principal);
+}
+
+.button a {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Main zone */
+
+.main {
+    background-color: black;
+    width: auto;
+    height: 100vh;
+    display: block;
+}
+
+/* Section 1 zone */
+
+.section-1 {
+    background-image: url(../imagens/luz-verde.svg);
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-1 h1 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 82px;
+    padding: 120px 0 20px 0;
+}
+
+.section-1 p {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    padding: 10px 0 20px 0;
+    color: var(--cor-principal);
+}
+
+.xbox {
+    width: 1235px;
+    height: 597px;
+    top: 456px;
+    left: 349px;
+}
+
+/* Section 2 zone */
+
+.section-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: auto;
+    padding: 250px 350px;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding-right: 40px;
+}
+
+.texto h1 {
+    font-size: 54px;
+    line-height: 80px;
+    padding: 20px 0;
+}
+
+.texto p {
+    color: rgba(192, 192, 192, 1);
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.controlo {
+    width: auto;
+    height: auto;
+    padding-left: 40px;
+}
+
+/* Section 3 zone */
+
+.section-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 98vw;
+    height: auto;
+}
+
+.filter {
+    height: 800px;
+    position: relative;
+}
+
+.filter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, black , transparent 80%);
+}
