@@ -56,12 +56,16 @@ header {
 .nav-bar a {
     color: white;
     font-size: 20px;
+    background-color: var(--gray);
+    border-radius: 50px;
+    padding: 10px 20px;
 }
 
 .button {
     width: 224px;
     height: 60px;
     background-color: var(--cor-principal);
+    border-radius: 10px;
 }
 
 .button a {
@@ -172,4 +176,203 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, black , transparent 80%);
+}
+
+.name {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+}
+
+.name-fifa {
+    position: absolute;
+    top: 84%;
+    left: 29.5%;
+}
+
+/* Container */
+
+.container {
+    row-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: auto;
+    padding: 250px 350px;
+}
+  
+  /* TITLE CONTAINER */
+.title-container {
+    font-size: 48px;
+    color: white;
+    font-weight: 600;
+}
+  
+.title-container span {
+    color: var(--cor-principal);
+}
+  
+  /* PERGUNTA CONTAINER */
+.pergunta {
+    flex: 1 1 100%;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--gray);
+    overflow: hidden;
+    min-height: auto;
+    height: 5rem;
+    transition: all 0.6s ease;
+}
+  
+.pergunta.visible {
+    height: 20rem;
+}
+  
+  /* TITLE PERGUNTA */
+.title-pergunta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+}
+  
+.title-pergunta p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    color: white;
+}
+  
+  /* DROP DOWN ICON */
+.icon {
+    filter: saturate(0);
+    transform: rotate(180deg);
+    transition: all 0.6s;
+    cursor: pointer;
+    padding: 2rem 1rem;
+    color: var(--cor-principal);
+}
+  
+.icon.clicked {
+    transform: rotate(0);
+    filter: none;
+}
+  
+  /* TEXTO PERGUNTA */
+.texto-pergunta {
+    font-size: 18px;
+    line-height: 2.7px;
+    color: var(--gray);
+    font-weight: 500;
+    padding-block: 2rem;
+}
+
+  /* footer */
+
+.footer {
+    position: absolute;
+    top: 3550px;
+    left: auto; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100%; 
+    padding: 30px;
+    background-color: black; 
+}
+
+.footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-around;
+    color: var(--gray);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        background-color: black;
+        width: auto;
+        height: 100vh;
+    }
+
+    /* Estilos do cabeçalho */
+    .header {
+        padding: 20px 10px;
+    }
+
+    /* Estilos da barra de navegação */
+    .nav-bar {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    /* Estilos do botão */
+    .button {
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Estilos da seção 1 */
+    .section-1 {
+        background-size: cover;
+        padding: 80px 20px;
+        text-align: center;
+        width: auto;
+        height: auto;
+    }
+    .section-1 h1 {
+        font-size: 36px;
+        padding: 40px 0 10px 0;
+    }
+    .section-1 p {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+
+    /* Estilos da seção 2 */
+    .section-2 {
+        flex-direction: column;
+        padding: 120px 20px;
+    }
+    .texto {
+        padding: 0;
+    }
+    .texto h1 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .texto p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .controlo {
+        padding: 20px 0;
+    }
+
+    /* Estilos da seção 3 */
+    .section-3 {
+        flex-direction: column;
+        padding: 80px 20px;
+    }
+
+    /* Estilos do rodapé */
+    .footer {
+        position: relative;
+        top: auto;
+        left: auto;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .footer p {
+        justify-content: center;
+        text-align: center;
+    }
 }
