@@ -173,41 +173,44 @@ header {
     width: 100%;
 }
 
-.wrapper-img::after {
-    /* content: url(../images/games/farcry-name.svg); */
-    bottom: 0;
-    left: 0;
-    height: 15%;    
-    width: 100%;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: absolute;
-}
-.wrapper-img.farcry::after {
-    content: url(../images/games/farcry-name.svg);
-}
-.wrapper-img.horizon::after {
-    content: url(../images/games/horizon-name.svg);
-}
-.wrapper-img.fifa::after {
-    content: url(../images/games/fifa-name.svg);
-}
-.wrapper-img.minecraft::after {
-    content: url(../images/games/minecraft-name.svg);
-}
-
-.filter::before {
+.wrapper-img::before {
     content: "";
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, black , transparent 80%);
+    background: linear-gradient(to top, black, transparent 60%);
+
+    position: absolute;
 }
+
+.wrapper-img::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.farcry::after {
+    content: url(../imagens/x2Ec8pmegcNHIFvBSDTwBgFU\ 1.svg);
+}
+
+.horizon::after {
+    content: url(../imagens/Forza_Horizon\ 1.svg);
+}
+
+.fifa::after {
+    content: url(../imagens/fifa.png);
+}
+
+.minecraft::after {
+    content: url(../imagens/minecraft\ 1.svg);
+}
+
 
 /* Container */
 
@@ -339,12 +342,15 @@ header {
         font-size: 8px;
         display: flex;
         justify-content: center;
+        background-color: grey;
+        padding: 10px 20px;
+        border-radius: 50px;
     }
 
     /* Estilos do botão */
     .button {
         width: 95%;
-        max-width: 300px;
+        max-width: 400px;
         text-align: center;
         font-size: 12px;
     }
@@ -368,21 +374,30 @@ header {
 
     .xbox {
         display: flex;
+        width: 100vw;
     }
 
     /* Estilos da seção 2 */
     .section-2 {
+        display: flex;
         flex-direction: column;
-        padding: 120px 20px;
     }
     .texto {
         padding: 0;
     }
     .texto h1 {
-        font-size: 36px;
-        line-height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 26px;
+        line-height: 25px;
     }
     .texto p {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         font-size: 16px;
         line-height: 28px;
     }
