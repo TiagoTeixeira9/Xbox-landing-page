@@ -155,19 +155,48 @@ header {
 
 /* Section 3 zone */
 
-.section-3 {
+.games {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
 
-    width: min(90%);
+    width: 98vw;
     margin: 0 auto;
 }
 
-.filter {
-    height: 800px;
+.games .wrapper-img {
     position: relative;
+    
+    height: 90vh;
+    width: 100%;
+}
+
+.games img {
+    width: 100%;
+}
+
+.wrapper-img::after {
+    /* content: url(../images/games/farcry-name.svg); */
+    bottom: 0;
+    left: 0;
+    height: 15%;    
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+}
+.wrapper-img.farcry::after {
+    content: url(../images/games/farcry-name.svg);
+}
+.wrapper-img.horizon::after {
+    content: url(../images/games/horizon-name.svg);
+}
+.wrapper-img.fifa::after {
+    content: url(../images/games/fifa-name.svg);
+}
+.wrapper-img.minecraft::after {
+    content: url(../images/games/minecraft-name.svg);
 }
 
 .filter::before {
@@ -178,18 +207,6 @@ header {
     width: 100%;
     height: 100%;
     background: linear-gradient(to top, black , transparent 80%);
-}
-
-.name {
-    position: absolute;
-    top: 85%;
-    left: 20%;
-}
-
-.name-fifa {
-    position: absolute;
-    top: 84%;
-    left: 29.5%;
 }
 
 /* Container */
